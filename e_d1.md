@@ -19,60 +19,6 @@ Você está analisando um ensaio clínico randomizado que possui o seguinte PICO
 
 A hipótese principal do estudo é a de que a covidina reduziria a mortalidade e o tempo de internação dos pacientes com Covid-19 em 28 dias, podendo ser utilizada no tratamento de pacientes graves.
 
-<details>
-<summary>Preview</summary>
-
-<figure class="highlight">
-    <pre>
-        <code>
-          ```
-set.seed(150393)
-
-n <- 400
-n_group <- 200
-
-#df control
-group <- rep("Placebo", n_group)
-died  <- sample(c("Alive", "Dead"), n_group, replace = TRUE, prob = (c(0.50, 0.50)))
-days_hosp <- rnorm(n_group, mean = 18, sd = 4)
-days_hosp <- round(days_hosp)
-age <- rnorm(n_group, mean = 60, sd = 30)
-age <- ifelse(age < 18, 18, age)
-age <- ifelse(age > 90, 90, age)
-age <- round(age)
-df_control <- data.frame(group, age, days_hosp, died)
-
-# df int
-group <- rep("Intervention", n_group)
-died  <- sample(c("Alive", "Dead"), n_group, replace = TRUE, prob = (c(0.75, 0.25)))
-days_hosp <- rnorm(n_group, mean = 12, sd = 3)
-days_hosp <- round(days_hosp)
-age <- rnorm(n_group, mean = 60, sd = 30)
-age <- ifelse(age < 18, 18, age)
-age <- ifelse(age > 90, 90, age)
-age <- round(age)
-
-
-df_int <- data.frame(group, age, days_hosp, died)
-
-
-df <- rbind(df_control, df_int)
-
-df <- df[sample(nrow(df)),]
-
-id <- 1:n
-df <- data.frame(id, df)
-
-```
-
-          
-        </code>
-    </pre>
-</figure>
-
-
-
-
 
 <details>
   
@@ -82,7 +28,7 @@ df <- data.frame(id, df)
 ```
 set.seed(150393)
 
-n <- 400
+{{n <- 400
 n_group <- 200
 
 #df control
@@ -115,7 +61,7 @@ df <- rbind(df_control, df_int)
 df <- df[sample(nrow(df)),]
 
 id <- 1:n
-df <- data.frame(id, df)
+df <- data.frame(id, df)}}
 
 ```
 
