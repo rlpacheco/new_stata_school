@@ -1,16 +1,3 @@
----
-title: "Estatística descritiva"
-author: RLP
-format: 
-  html:
-    code-fold: true
-    code-tools: true
-css: style.css
-editor_options:
-  chunk_output_type: inline
-execute: 
-  warning: false
----
 
 **Como citar o conteúdo deste site**
 
