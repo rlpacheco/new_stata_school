@@ -24,7 +24,7 @@ A hipótese principal do estudo é a de que a covidina reduziria a mortalidade e
 <summary>Database in R</summary>  
 
 
-```r
+```
 set.seed(150393)
 
 n <- 400
