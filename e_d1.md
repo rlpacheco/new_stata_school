@@ -19,7 +19,7 @@ Você está analisando um ensaio clínico randomizado que possui o seguinte PICO
 
 A hipótese principal do estudo é a de que a covidina reduziria a mortalidade e o tempo de internação dos pacientes com Covid-19 em 28 dias, podendo ser utilizada no tratamento de pacientes graves.
 
-```{r}
+```r
 set.seed(150393)
 
 n <- 400
