@@ -22,8 +22,7 @@ A hipótese principal do estudo é a de que a covidina reduziria a mortalidade e
 
 <details>
   
-<summary>Database in R</summary>  
-<p>
+<summary>Database in R</summary> 
 
 ```
 set.seed(150393)
@@ -65,7 +64,6 @@ df <- data.frame(id, df)
 
 ```
 
-</p>
 </details>
 
 Uma base de com dados com as principais variáveis deste estudo se pareceria com:
