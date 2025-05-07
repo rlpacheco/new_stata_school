@@ -24,7 +24,6 @@ A hipótese principal do estudo é a de que a covidina reduziria a mortalidade e
   
 <summary>Database in R</summary> 
 <pre><code>
-```
 set.seed(150393)
 
 n <- 400
@@ -62,7 +61,6 @@ df <- df[sample(nrow(df)),]
 id <- 1:n
 df <- data.frame(id, df)
 
-```
 </code></pre>
 </details>
 
