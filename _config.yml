@@ -1,1 +1,65 @@
+website:
+  title: "nep_sbeats"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: Sobre
+      - href: cursos_mp.qmd
+        text: Cursos
+      - href: pacotes_mp.qmd
+        text: Pacotes
+      - href: recursos_mp.qmd
+        text: Recursos
+      - href: repositorio.qmd
+        text: Repositório
+  
+  sidebar:
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:
+      - section: "Bioestatística aplicada à pesquisa clínica"
+        contents:
+          - e_d1.qmd
+          - e_d1_5.qmd
+          - e_d2.qmd
+          - e_d2_5.qmd   
+      - section: "Busca em base de dados"
+        contents:
+              - s_1.qmd
+              - s_2.qmd
+              - s_3.qmd
+              - s_4.qmd
+              - s_5.qmd 
+      - section: "Interpretação de ECRs oncologia"
+        contents:
+              - e_d1.qmd
+              - e_d1_5.qmd
+              - e_d2.qmd
+              - e_d2_5.qmd
+              - eo_2.qmd
+              - eo_3.qmd
+              - eo_4.qmd
+              - eo_5.qmd
+              - eo_6.qmd
+              
+          
+  back-to-top-navigation: true
+    
+  page-footer: 
+    left: "Copyright 2023. NEP-SBE-ATS. dgp.cnpq.br/dgp/espelhogrupo/5958647991011504"
 
+    
+  reader-mode: true 
+  
+format:
+  html:
+    theme: default
+    css: styles.css
+    toc: false
+    mainfont: arial
+    
+
+editor: visual
